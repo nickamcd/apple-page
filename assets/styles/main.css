@@ -79,13 +79,18 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
-	list-style: none;
-	background-color: red;
+	list-style: none; 
+	background: linear-gradient(to bottom, #8b8b8b , #676767 50%, #595959 50%, #757575 100%);
+}
+
+nav ul li {
+	display: inline-block;
 }
 
 nav > * {
+	flex: 1;
 	text-align: center;
-	padding: 20px;
+	padding: 10px 20px;
 	border-right: 1px solid black;
 }
 
@@ -95,6 +100,48 @@ nav > *:hover {
 
 nav > :last-child {
 	border-right: none;
+}
+
+nav > :first-child:hover {
+	border-radius: 8px 0 0 8px
+}
+
+nav > :last-child:hover {
+	border-radius: 0 8px 8px 0;
+	background-color: red;
+}
+
+nav li {
+	padding-top: 18px;
+	font-size: 12px;
+	color: #fff;
+}
+
+.fa-apple {
+	padding-top: 15px;
+	color: #fff;
+}
+
+.fa-search {
+	position: absolute;
+	padding: 5px;
+	top: 10px;
+
+	color: #fff;
+}
+
+nav input[type="search"] {
+  -webkit-appearance: textfield;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	width: 100px;
+	padding-left: 15px;
+	background-color: #333;
+	color: #fff;
+}
+
+nav input[type="search"]:focus {
+	border: none;
 }
 
 /*
