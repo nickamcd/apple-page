@@ -1,0 +1,140 @@
+/*
+--------------------
+  CSS Reset
+--------------------
+*/
+ 
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+--------------------
+  General Styling
+--------------------
+*/
+
+body {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+/*
+--------------------
+  Nav Bar
+--------------------
+*/
+
+nav {
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 980px;
+	border-radius: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	list-style: none;
+	background-color: red;
+}
+
+nav > * {
+	text-align: center;
+	padding: 20px;
+	border-right: 1px solid black;
+}
+
+nav > *:hover {
+	background-color: blue;
+}
+
+nav > :last-child {
+	border-right: none;
+}
+
+/*
+--------------------
+  Main Page
+--------------------
+*/
+
+main {
+	height: 100vh;
+}
+
+#main-content {
+	height: 80%;
+	text-align: center;
+	background-color: mistyrose;
+}
+
+#sub-content {
+	height: 20%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2px;
+}
+
+#sub-content span {
+	background-color: olive;
+}
+
+/*
+--------------------
+  Footer
+--------------------
+*/
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 90px;
+	width: 100%;
+	background-color: blue;
+}
