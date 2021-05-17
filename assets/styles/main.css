@@ -95,7 +95,8 @@ nav > * {
 }
 
 nav > *:hover {
-	background-color: blue;
+	cursor: pointer;
+	background-color: #333;
 }
 
 nav > :last-child {
@@ -108,7 +109,7 @@ nav > :first-child:hover {
 
 nav > :last-child:hover {
 	border-radius: 0 8px 8px 0;
-	background-color: red;
+	background: linear-gradient(to bottom, #8b8b8b , #676767 50%, #595959 50%, #757575 100%);
 }
 
 nav li {
@@ -155,20 +156,72 @@ main {
 }
 
 #main-content {
-	height: 80%;
+	height: 67.777%;
+	padding-top: 150px;
 	text-align: center;
-	background-color: mistyrose;
+	background: url(/assets/images/hero.jpg);
+	background-position: center bottom;
+  font-family: 'Source Sans Pro', sans-serif;
+	color: #fff;
+}
+
+#main-content > * {
+	margin: 0 auto;
+	width: 800px;
+	font-weight: 100;
+}
+
+#main-content h1 {
+	font-size: 60px;
+	margin-bottom: 30px;
+}
+
+#main-content h2 {
+	font-size: 30px;
+	margin-bottom: 25px;
+}
+
+#main-content h3 {
+	font-size: 25px;
 }
 
 #sub-content {
-	height: 20%;
+	height: 15%;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 2px;
 }
 
 #sub-content span {
-	background-color: olive;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+#sub-content .image {
+	
+}
+
+#sub-content #image-1 {
+	background: url(/assets/images/img1.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+#sub-content #image-2 {
+	background: url(/assets/images/img2.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+#sub-content #image-3 {
+	background: url(/assets/images/img3.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#sub-content #image-4 {
+	background: url(/assets/images/img4.jpg);
+	background-position: center;
+	background-size: cover;
 }
 
 /*
@@ -183,5 +236,20 @@ footer {
 	left: 0;
 	height: 90px;
 	width: 100%;
-	background-color: blue;
+	background-color: #fff;
+	padding: 20px;
+}
+
+.footer-left {
+	float: left;
+	font-size: 10px;
+}
+
+.footer-left p {
+	margin-bottom: 15px;
+}
+
+.footer-right {
+	float: right;
+	font-size: 10px;
 }
